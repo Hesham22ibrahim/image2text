@@ -1,0 +1,20 @@
+import pytesseract
+img = cv2.imread(' image. jpg")
+# Adding custom options
+custom_config = r'--oem 3 --psm 6'
+pytesseract.image_to_string(img, config-custom_config)
+Preprocessing for Tesseract
+To avoid all the ways your tesseract output accuracy can drop, you need to
+make sure the image is appropriately pre-processed.
+This includes rescaling, binarization, noise removal, deskewing, etc.
+To preprocess image for OCR, use any of the following python functions or
+follow the OpenCV documentation.
+import cv2
+import numpy as np
+img = cv2.imread(' image. jpg")
+# get grayscale image
+def get_grayscale(image) :
+return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+# noise removal
+def remove_noise (image)
+return cv2.medianBlur(image, 5)
