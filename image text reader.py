@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jan 10 20:51:13 2021
-
-@author: Lion PC
 """
 
 import cv2
