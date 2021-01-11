@@ -13,7 +13,7 @@ img = cv2.imread('x.png')
 d = pytesseract.image_to_data(img, output_type=Output.DICT)
 
 #display keys and values of the dict
-print(d.keys()
+print(d.keys())
 print(d.values())
 
 #extract only the text/words 
